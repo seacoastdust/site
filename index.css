@@ -1,5 +1,6 @@
 * {
   font-family: 'Open Sans';
+  font-size: 21px;
 }
 
 p {
@@ -13,46 +14,57 @@ p.indent {
   margin-right: 20px;
 }
 
-h1 {
-  font-family: 'Parisienne', cursive;
+h1, h2, h3, h4, h5 {
+  font-family: 'Cormorant', serif;
 }
 
-h2 {
-  font-family: 'Parisienne', cursive;
+.page-background {
+  opacity: .9;
+  background: white;
+}
+
+.my-padding {
+  padding: 40px 0px 40px 0px;
+  background-image: linear-gradient(to bottom right, #5db275, #687daa);
+}
+
+.my-page {
+  width: 90%;
+  margin: auto;
+  box-shadow: 0px 0px 100px rgba(0,0,0,.3);
+}
+
+@media (min-width: 576px) {
+  .my-padding {
+    padding: 80px 0px 80px 0px;
+  }
+
+  .my-page {
+    margin: auto;
+    box-shadow: 0px 0px 100px rgba(0,0,0,.3);
+  }
 }
 
 @media (min-width: 992px) {
   .my-page {
     max-width: 960px;
-    margin: auto;
-    box-shadow: 0px 0px 100px rgba(0,0,0,.3);
-  }
-
-  .stuff {
-    padding: 80px 0px 80px 0px;
   }
 }
 
-@media (min-width: 768px) and (max-width: 992px){
+@media (min-width: 768px) and (max-width: 992px) {
   .my-page {
     max-width: 760px;
-    margin: auto;
-    box-shadow: 0px 0px 100px rgba(0,0,0,.3);
-  }
-
-  .stuff {
-    padding: 80px 0px 80px 0px;
   }
 }
 
-@media (min-width: 576px) and (max-width: 768px){
+@media (min-width: 576px) and (max-width: 768px) {
   .my-page {
     max-width: 570px;
-    margin: auto;
-    box-shadow: 0px 0px 100px rgba(0,0,0,.3);
   }
+}
 
-  .stuff {
-    padding: 80px 0px 80px 0px;
+@media (max-width: 576px) {
+  * {
+    font-size: 17px;
   }
 }
