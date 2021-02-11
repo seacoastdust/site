@@ -1,6 +1,6 @@
 * {
   font-family: 'Open Sans';
-  font-size: 21px;
+  font-size: 23px;
 }
 
 p {
@@ -17,7 +17,7 @@ h1, h2, h3, h4, h5 {
 }
 
 .page-background {
-  opacity: .9;
+  opacity: .95;
   background: white;
 }
 
@@ -43,18 +43,6 @@ h1, h2, h3, h4, h5 {
   }
 }
 
-@media (min-width: 576px) and (max-width: 768px) {
-  .my-padding {
-    padding: 40px 0px 40px 0px;
-  }
-}
-
-@media (min-width: 768px) and (max-width: 992px) {
-  .my-padding {
-    padding: 60px 0px 60px 0px;
-  }
-}
-
 @media (min-width: 576px) {
   p {
     margin-left: 30px;
@@ -67,9 +55,21 @@ h1, h2, h3, h4, h5 {
   }
 }
 
-@media (min-width: 992px) {
+@media (min-width: 576px) and (max-width: 768px) {
+  .my-padding {
+    padding: 40px 0px 40px 0px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1200px) {
+  .my-padding {
+    padding: 60px 0px 60px 0px;
+  }
+}
+
+@media (min-width: 1200px) {
   .my-page {
-    max-width: 960px;
+    max-width: 1100px;
     box-shadow: 0px 0px 100px rgba(0,0,0,.3);
   }
 
