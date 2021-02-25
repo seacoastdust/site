@@ -1,5 +1,5 @@
 * {
-  font-family: 'Open Sans';
+  font-family: 'Arial';
   font-size: 23px;
 }
 
@@ -68,12 +68,10 @@ h1, h2, h3, h4, h5 {
 
 @media (max-width: 576px) {
   * {
-    font-family: 'ui-serif';
-    font-size: 20px;
+    font-size: 18px;
   }
 
   h1, h2, h3, h4, h5 {
-    font-family: 'open serif';
     font-style: normal;
   }
 
