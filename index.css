@@ -1,0 +1,85 @@
+* {
+  font-family: 'Arial';
+}
+
+p {
+  text-align: justify;
+  margin-top: 15px;
+}
+
+p.indent {
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+.page-background {
+  background: white;
+}
+
+.my-padding {
+  padding: 20px 0px 20px 0px;
+  background-image: linear-gradient(to bottom right, #687daa, #337d3e);
+}
+
+.big-padding {
+  padding: 20px 0px 0px 0px;
+}
+
+.my-page {
+  width: 95%;
+  margin: auto;
+  max-width: 800px;
+}
+
+@media (min-width: 576px) {
+  p {
+    margin-left: 30px;
+    margin-right: 30px;
+  }
+
+  p.indent {
+    margin-left: 60px;
+    margin-right: 60px;
+  }
+
+  h4 {
+    margin-left: 30px;
+  }
+}
+
+@media (min-width: 576px) and (max-width: 768px) {
+  .my-padding {
+    padding: 40px 0px 40px 0px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1200px) {
+  .my-padding {
+    padding: 60px 0px 60px 0px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .my-page {
+    box-shadow: 0px 0px 100px rgba(0,0,0,.3);
+  }
+
+  .my-padding {
+    padding: 80px 0px 80px 0px;
+  }
+}
+
+@media (max-width: 576px) {
+  * {
+    font-size: 16px;
+  }
+
+  h4 {
+    font-style: normal;
+    font-size: 21px;
+  }
+
+  .my-page {
+    box-shadow: 0px 0px 100px rgba(0,0,0,.3);
+  }
+}
